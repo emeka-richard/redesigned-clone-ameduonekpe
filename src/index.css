@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+:root {
+  --off-white: #f9f9f9f2;
+  --primary-black: #000000e7;
+  --light-primary-black: #0b0a0a;
+  --secondary-black: #1E1E1E;
+  --tertiary-black: #323232;
+  --primary-green: #008053;
+  /* --primary-green: #008080; */
+  --opacity-green: #20cf8941;
+  /* --opacity-green: #20cfc641; */
+  --primary-white: #ffffff;
+  --off-black: #2B2B2B;
+  --off-black-1: #575757;
+  --off-black-2: #7E7E7E;
+  --light-grey: #D5DDDD;
+  --very-light-green: #e0f8ecf5;
+  --not-light-green: #97dbb9f5;
+  --box-shadow: rgba(0, 0, 0, 0.561);
+  --off-black-opacity: rgba(255, 255, 255, 0.582);
+  --off-dark-opacity: rgba(0, 0, 0, 0.563);
+  --white-gradient: linear-gradient(to bottom, var(--off-dark-opacity), var(--off-black-opacity));
+
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  background-color: var(--primary-white);
+  color: var(--off-black);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(34, 34, 126);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+#error-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  h1 {
+    font-size: clamp(1.125rem, 3vw, 1.375rem);
+    font-weight: 700;
+  }
+  p {
+    font-size: clamp(.875rem, 3vw, 1.25rem);
+    font-weight: 400;
+  }
+
+  button {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .875rem 1.375rem;
+    font-size: clamp(0.75rem, 3vw, 1.125rem);
+    font-weight: 500;
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--primary-green);
+        color: var(--primary-white);
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.team_skeleton {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 3rem 0rem;
+}
+.team_skeleton_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    h3 {
+      font-size: clamp(1rem, 4vw, 1.875rem);
+      font-weight: 600;
+        color: var(--primary-green);
+    }    
+}
+.lineIcon {
+    width: 50px;
+}
+
+.team_skeleton_img_wrapper {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &:hover {
+    img {
+      border: 3px dashed var(--primary-green);
+    }
+    span {
+      outline: 3px solid var(--primary-green);
+      background: var(--primary-white);
+    }
+  }
+}
+.team_skeleton_img_container {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  img {
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid var(--primary-green);
+    transition: all 200ms ease;
+  }
+}
+.team_skeleton_img1,
+.team_skeleton_img2 {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.team_skeleton_img1 {
+    right: -1rem;
+}
+.team_skeleton_img2 {
+    left: -1rem;
+}
+.team_skeleton_img3 {
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+}
+.team_skeleton_span_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.875rem;
+
+  span {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: var(--off-black-2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease;
+
+        &:nth-child(2) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+/* span: */
+.team_skeleton_btn {
+  width: max-content;
+  font-size: clamp(1rem, 4vw, 1.375rem);
+  font-weight: 500;
+  color: var(--primary-green);
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid var(--primary-green);
+  cursor: pointer;
+  background-color: var(--off-white);
+
+  &:hover {
+    background-color: var(--primary-green);
+    color: var(--primary-white);
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .team_skeleton {
+    padding: 3rem 0;
+  }
+  .team_skeleton_img1,
+  .team_skeleton_img2 {
+    width: 80px;
+    height: 80px;
+  }
+  .team_skeleton_img2 {
+  }
+  .team_skeleton_img3 {
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team_skeleton_img1,
+  .team_skeleton_img2 {
+    width: 100px;
+    height: 100px;
+  }
+  .team_skeleton_img2 {
+    /* z-index: 0; */
+  }
+  .team_skeleton_img3 {
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team_skeleton {
+    padding: 3rem 0rem;
+  }
+}

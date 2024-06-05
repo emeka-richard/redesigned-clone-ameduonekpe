@@ -1,0 +1,173 @@
+.careers_header {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../../assets/images/corpo8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.careers_header_wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0rem 0rem;
+  background: var(--off-dark-opacity);
+}
+.careers_header_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    font-size: clamp(1.375rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: var(--primary-white);
+
+    span {
+      color: red;
+    }
+  }
+}
+
+.careers_body {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 1rem;
+  background: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.whyjoinus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .whyjoinus_h3 {
+    font-size: clamp(1.125rem, 4vw, 1.625rem);
+    font-weight: 700;
+    color: var(--primary-green);
+  }
+  .whyjoinus_p {
+    font-size: clamp(0.875rem, 4vw, 1.25rem);
+    font-weight: 400;
+    line-height: clamp(1.375rem, 4vw, 1.875rem);
+    text-align: justify;
+  }
+  .whyjoinus_grid {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  
+  }
+  .whyjoinus_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    h4 {
+      font-size: clamp(1.125rem, 4vw, 1.375rem);
+      font-weight: 700;
+    }
+    p {
+      font-size: clamp(0.875rem, 4vw, 1.25rem);
+      font-weight: 400;
+      line-height: clamp(1.375rem, 4vw, 1.875rem);
+      text-align: justify;
+    }
+  }
+}
+
+.vacancies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h3 {
+    font-size: clamp(1.125rem, 4vw, 1.625rem);
+    font-weight: 700;
+    color: var(--primary-green);
+  }
+
+  .vacancies_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  .vacancies_item {
+    width: 100%;
+    height: max-content;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h4 {
+      font-size: clamp(1.125rem, 4vw, 1.375rem);
+      font-weight: 700;
+    }
+    p {
+      font-size: clamp(0.875rem, 4vw, 1.25rem);
+      font-weight: 400;
+      line-height: clamp(1.375rem, 4vw, 1.875rem);
+      text-align: justify;
+    }
+    button {
+      width: max-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .875rem 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--not-light-green);
+      background-color: var(--very-light-green);
+      font-size: clamp(0.875rem, 4vw, 1.25rem);
+      font-weight: 400;
+
+      &:hover {
+        background-color: var(--light-grey);
+        border: 1px solid var(--primary-green);
+        color: var(--primary-white);
+      }
+    }
+  }
+  .vacancies_nothing {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: .625rem;
+      border-radius: 8px;
+      border: 2px solid var(--light-grey);
+        font-size: clamp(0.875rem, 4vw, 1.25rem);
+      font-weight: 400;
+      line-height: clamp(1.375rem, 4vw, 1.875rem);
+    }
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .careers_body {
+    padding: 4rem 3rem;
+  }
+}
+@media screen and (min-width: 940px) {
+}
+@media screen and (min-width: 1440px) {
+  .careers_body {
+    padding: 6rem 13rem;
+  }
+}
